@@ -1,0 +1,24 @@
+<div class="container">
+  <md-card>
+    <md-card-title>
+      Cursos
+    </md-card-title>
+    <md-divider></md-divider>
+    <md-list>
+      <div *ngIf="errorMessage">
+        {{errorMessage}}
+      </div>
+      <md-list-item *ngFor="let s of subject">
+        <!-- {{s | json}} -->
+        <h3 md-line> <strong>{{s.name}}</strong> </h3>
+        <p md-line>Añadido: {{s.date}}, {{s.time}}</p>
+        <p md-line>Instructor: {{s.tutor_id}}</p>
+        <span md-line><md-icon color="warn">favorite</md-icon> {{s.likes}} Likes</span>
+      </md-list-item>
+    </md-list>
+  </md-card>
+  <button class="add-course" md-fab color="warn">
+    <md-icon class="fab">add</md-icon>
+  </button>
+  <button md-raised-button color="warn" routerLink="/materias">Volver</button>
+</div>

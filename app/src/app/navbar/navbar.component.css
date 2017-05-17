@@ -1,0 +1,46 @@
+.nav {
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(234,233,235,0.8);
+  margin-bottom: 60px;
+}
+.nav .inner-navbar {
+  padding: 0px 25px;
+}
+.nav .inner-navbar .navbar-left {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  height: 60px;
+  line-height: 60px;
+}
+.nav .inner-navbar .navbar-left .brand {
+  height: 60px;
+}
+.nav .inner-navbar .navbar-left .brand .logo {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+.nav .inner-navbar .navbar-left .brand a {
+  font-weight: 300;
+  font-size: 22px;
+}
+.nav .inner-navbar .navbar-left .brand a:hover {
+  opacity: 0.7;
+}
+.nav .inner-navbar .navbar-right {
+  float: right;
+  line-height: 60px;
+}
+.nav .inner-navbar .navbar-right .actions .menu .menu-element .user .profile-photo {
+  vertical-align: middle;
+  border-radius: 100%;
+  width: 60px;
+  cursor: pointer;
+}

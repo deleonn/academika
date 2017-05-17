@@ -1,0 +1,11 @@
+md-card {
+  width: 80%;
+  margin: 0 auto;
+}
+md-card-title {
+  font-weight: 300;
+}
+md-list-item {
+  padding: 10px 0px;
+  font-size: 20px;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+  <md-card>
+    <md-card-title>
+      Materias
+    </md-card-title>
+    <md-divider></md-divider>
+    <md-list>
+      <div *ngIf="errorMessage">
+        {{errorMessage}}
+      </div>
+      <md-list-item *ngFor="let s of subjects" (click)='onSelect(s)'>
+        <h3 md-line> {{s.name}} </h3>
+      </md-list-item>
+    </md-list>
+  </md-card>
+
+</div>

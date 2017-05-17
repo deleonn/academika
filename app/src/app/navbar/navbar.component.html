@@ -1,0 +1,35 @@
+<nav class="nav">
+  <div class="inner-navbar">
+    <div class="navbar-left">
+      <div class="brand">
+        <a routerLink="/">
+          <img class="logo" src="/assets/academika.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <div class="actions">
+        <ul class="menu">
+            <!-- If user is logged in -->
+          <li class="menu-element">
+            <div class="user">
+              <button md-icon-button [mdMenuTriggerFor]="menu">
+                <md-icon>more_vert</md-icon>
+              </button>
+              <md-menu #menu="mdMenu">
+                <button md-menu-item disabled>
+                  <md-icon>account_circle</md-icon>
+                  <span>Mi Perfil</span>
+                </button>
+                <button md-menu-item>
+                  <md-icon>exit_to_app</md-icon>
+                  <span>Logout</span>
+                </button>
+              </md-menu>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
