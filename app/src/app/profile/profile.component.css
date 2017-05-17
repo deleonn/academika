@@ -1,0 +1,41 @@
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.user-data {
+  text-align: center;
+}
+.profile-picture {
+  text-align: center;
+}
+.profile-picture img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.user-rating {
+  font-size: 48px;
+  font-weight: 600;
+}
+.user-name{
+  font-size: 26px;
+  font-weight: 300;
+}
+.user-email{
+  font-size: 26px;
+  font-weight: 300;
+}
+.user-role{
+  padding: 5px;
+  opacity: .3;
+  margin-top: 15px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  opacity: .3;
+  text-align: left;
+  padding: 15px 0px;
+}
+.user-courses {
+  text-align: left;
+}

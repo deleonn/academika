@@ -1,3 +1,34 @@
-<p>
-  profile works!
-</p>
+<div class="profile">
+  <div class="main-container">
+    <md-card class="user-data">
+      <div class="profile-picture">
+        <img src="/assets/academika.png" alt="">
+      </div>
+      <div>
+        <p class="user-rating">4.8</p>
+        <p class="user-name">Joel de Leon</p>
+        <p class="user-email">joel.dl08@gmail.com</p>
+        <div class="user-role"><span>Tutor</span></div>
+      </div>
+    </md-card>
+
+    <div class="title">
+      <h3>Mis Cursos</h3>
+    </div>
+
+    <md-card class="user-courses">
+      <md-list>
+        <div *ngIf="errorMessage">
+          <!-- {{errorMessage}} -->
+        </div>
+        <md-list-item>
+          <!-- {{s | json}} -->
+          <h3 md-line> <strong>Introducción a la Programación</strong> </h3>
+          <p md-line>Añadido: 2017-05-12, 10:26:48</p>
+          <p md-line>Instructor: 5</p>
+          <span md-line><md-icon color="warn">favorite</md-icon> 0 Likes</span>
+        </md-list-item>
+      </md-list>
+    </md-card>
+  </div>
+</div>

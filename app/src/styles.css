@@ -54,3 +54,6 @@ ul {
 .fab {
   vertical-align: baseline!important;
 }
+.mat-menu-item {
+  overflow-x: initial!important;
+}

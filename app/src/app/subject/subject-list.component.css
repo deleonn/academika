@@ -8,4 +8,9 @@ md-card-title {
 md-list-item {
   padding: 10px 0px;
   font-size: 20px;
+  cursor: pointer;
+}
+md-list-item:hover {
+  opacity: .7;
+  background: #f7f7f7;
 }
