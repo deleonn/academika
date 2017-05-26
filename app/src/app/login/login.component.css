@@ -1,0 +1,75 @@
+.login {
+  background: #f7f7f7;
+  height: 100vh;
+}
+.left {
+  float: left;
+  width: 45%;
+  background-image: url(/assets/loginbg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,.55);
+  background-blend-mode: multiply;
+}
+.brand {
+  display: block;
+}
+.logo {
+  width: 40px;
+  display: inline-block;
+  vertical-align: sub;
+}
+.brand-name {
+  display: inline-block;
+}
+.container {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: left;
+  height: 100vh;
+  position: relative;
+}
+.inner-container {
+  position: relative;
+  top: 15%;
+}
+.inner-container h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+.inner-container p {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin-top: 20px;
+}
+.right {
+  float: right;
+  width: 55%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: left;
+  height: 100vh;
+  position: relative;
+}
+.form {
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  top: 10%;
+}
+.active {
+  color: #e12d3c!important;
+  border-bottom: 3px solid #e12d3c!important;
+}
+.sign-in, .sign-up {
+  width: 48%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  color: rgba(0,0,0,.4);
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  margin-bottom: 60px;
+}

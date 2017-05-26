@@ -23,16 +23,23 @@ button {
   background: transparent;
   border: 1px solid;
 }
-.green-btn {
+.btn {
   display: inline-block;
   width: 36%;
   height: 50px;
   margin: 0px 2%;
   border: none;
-  border-radius: 50px;
   color: #fff;
   cursor: pointer;
+}
+.red {
+  background-color: #e12d3c;
+}
+.green {
   background-color: #00cc8b;
+}
+.rounded {
+  border-radius: 50px;
 }
 ul {
   list-style: none;

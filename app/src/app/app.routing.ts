@@ -7,6 +7,8 @@ import { SubjectListComponent } from './subject/subject-list.component';
 import { SubjectDetailComponent } from './subject/subject-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { SignInComponent } from './login/sign-in/sign-in.component';
+import { SignUpComponent } from './login/sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   {
@@ -36,7 +38,22 @@ const appRoutes: Routes = [
   },
   {
     path: 'login',
+    redirectTo: 'login/ingresa',
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
     component: LoginComponent,
+    children: [
+      {
+        path: 'ingresa',
+        component: SignInComponent
+      },
+      {
+        path: 'registrate',
+        component: SignUpComponent
+      },
+    ]
   }
 ]
 

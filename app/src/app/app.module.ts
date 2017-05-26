@@ -16,6 +16,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SubjectListComponent } from './subject/subject-list.component';
 import { SubjectDetailComponent } from './subject/subject-detail.component';
+import { AuthComponent } from './auth/auth.component';
+import { SignInComponent } from './login/sign-in/sign-in.component';
+import { SignUpComponent } from './login/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SubjectDetailComponent } from './subject/subject-detail.component';
     ProfileComponent,
     LoginComponent,
     SubjectListComponent,
-    SubjectDetailComponent
+    SubjectDetailComponent,
+    AuthComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

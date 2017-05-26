@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<div class="login">
+  <div class="container left">
+    <div class="inner-container">
+      <div class="brand">
+        <img src="/assets/academika.png" alt="Logo" class="logo"/> <h3 class="brand-name">Academika</h3>
+      </div>
+      <p>La plataforma estudiantil que te volverá inteligente.</p>
+    </div>
+  </div>
+  <div class="right">
+    <form class="form" action="">
+      <div class="actions">
+        <a class="sign-in" routerLink="ingresa" routerLinkActive="active">INGRESA</a>
+        <a class="sign-up" routerLink="registrate" routerLinkActive="active">REGISTRATE</a>
+      </div>
+      <router-outlet></router-outlet>
+    </form>
+  </div>
+</div>

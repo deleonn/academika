@@ -1,0 +1,67 @@
+.inputs {
+  margin-bottom: 40px;
+}
+.input-group {
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  background: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 0px;
+  outline: none;
+  color: rgba(0,0,0,.5);
+  transition: all .2s ease;
+}
+input:focus {
+  border-bottom:1px solid #e12d3c;
+  color: rgba(0,0,0,1);
+}
+button, button > .text, button > .arrow-icon{
+  transition: all .2s ease;
+}
+.text, .arrow-icon {
+  display: inline-block;
+}
+.text {
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+}
+.arrow-icon {
+  vertical-align: bottom;
+  opacity: 0;
+  left: 60px;
+  position: relative;
+}
+button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+button:hover > .text {
+  transform: translateX(-10px);
+}
+button:hover > .arrow-icon {
+  transform: translateX(-50px);
+  opacity: 1;
+}
+.input-buttons {
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 10px;
+}
+.forgot {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 16px;
+  opacity: .6;
+  transition: all .2s ease;
+}
+.forgot:hover {
+  opacity: 1;
+  cursor: pointer;
+}
