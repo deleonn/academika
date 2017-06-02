@@ -32,7 +32,6 @@ const appRoutes: Routes = [
       {
         path: 'perfil',
         component: ProfileComponent,
-        canActivate: [AuthGuard],
       }
     ]
   },

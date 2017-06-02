@@ -8,6 +8,7 @@ import 'hammerjs';
 
 import { routing } from './app.routing';
 import { AuthGuard } from './auth-guard.service'
+import { AuthService } from './auth/auth.service'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -41,7 +42,7 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
     routing,
     MaterialModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
