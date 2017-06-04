@@ -5,8 +5,8 @@
     </md-card-title>
     <md-divider></md-divider>
     <md-list>
-      <div *ngIf="errorMessage">
-        {{errorMessage}}
+      <div *ngIf="!subject">
+        <div class="error">No hay cursos actualmente. Inténtalo mas tarde.</div>
       </div>
       <md-list-item *ngFor="let s of subject">
         <!-- {{s | json}} -->
@@ -17,7 +17,7 @@
       </md-list-item>
     </md-list>
   </md-card>
-  <button class="add-course" md-fab color="warn">
+  <button class="add-course" md-fab color="warn" *ngIf="currentUser.role.id == 2">
     <md-icon class="fab">add</md-icon>
   </button>
   <button md-raised-button color="warn" routerLink="/materias">Volver</button>

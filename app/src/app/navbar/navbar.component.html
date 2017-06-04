@@ -13,6 +13,8 @@
             <!-- If user is logged in -->
           <li class="menu-element">
             <div class="user">
+                <img class="profile-photo" src="http://academika.app/{{currentUser.photo}}" alt="User Photo">
+                <span>{{currentUser.name}}</span>
               <button md-icon-button [mdMenuTriggerFor]="menu">
                 <md-icon>more_vert</md-icon>
               </button>
@@ -21,7 +23,7 @@
                   <md-icon>account_circle</md-icon>
                   <span>Mi Perfil</span>
                 </button>
-                <button md-menu-item disabled>
+                <button md-menu-item (click)="logout()">
                   <md-icon>exit_to_app</md-icon>
                   <span>Logout</span>
                 </button>

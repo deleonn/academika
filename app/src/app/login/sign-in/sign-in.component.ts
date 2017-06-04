@@ -14,8 +14,8 @@ export class SignInComponent implements OnInit {
   ngOnInit() {
   }
 
-  login() {
-   this.authService.login().subscribe(() => {
+  login(username: string, password: string) {
+   this.authService.login(username, password).subscribe(() => {
      if (this.authService.isLoggedIn) {
        // Get the redirect URL from our auth service
        // If no redirect has been set, use the default

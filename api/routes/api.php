@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('demo', 'DemoController@index');
 Route::resource('subjects', 'SubjectController');
+Route::post('login', 'AuthController@login');

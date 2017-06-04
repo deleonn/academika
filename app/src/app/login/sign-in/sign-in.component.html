@@ -1,13 +1,14 @@
 <div class="inputs">
   <div class="input-group">
-    <input type="text" placeholder="Usuario">
+    <input type="text" placeholder="Usuario" #username>
   </div>
   <div class="input-group">
-    <input type="password" placeholder="Contraseña">
+    <input type="password" placeholder="Contraseña" #password>
   </div>
 </div>
 <div class="input-buttons">
-  <button class="btn red" routerLink="/materias" (click)="login()"><div class="text">Login</div> <md-icon class="arrow-icon">arrow_forward</md-icon></button>
+  <button class="btn red" (click)="login(username.value, password.value)"><div class="text">Login</div> <md-icon class="arrow-icon">arrow_forward</md-icon></button>
+  {{result | json}}
 </div>
 <div class="forgot">
   <p>¿Olvidaste tu contraseña?</p>

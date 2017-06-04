@@ -5,18 +5,18 @@
         <img src="/assets/academika.png" alt="">
       </div>
       <div>
-        <p class="user-rating">4.8</p>
-        <p class="user-name">Joel de Leon</p>
-        <p class="user-email">joel.dl08@gmail.com</p>
-        <div class="user-role"><span>Tutor</span></div>
+        <p class="user-rating" *ngIf="currentUser.role.id == 2">4.8</p>
+        <p class="user-name">{{currentUser.name}}</p>
+        <p class="user-email">{{currentUser.email}}</p>
+        <div class="user-role"><span>{{currentUser.role.name}}</span></div>
       </div>
     </md-card>
 
-    <div class="title">
+    <div class="title"  *ngIf="currentUser.role.id == 2">
       <h3>Mis Cursos</h3>
     </div>
 
-    <md-card class="user-courses">
+    <md-card class="user-courses" *ngIf="currentUser.role.id == 2">
       <md-list>
         <div *ngIf="errorMessage">
           <!-- {{errorMessage}} -->

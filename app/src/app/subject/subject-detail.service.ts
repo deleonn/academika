@@ -15,7 +15,13 @@ export class SubjectDetailService {
 
   getSubject(id): Observable<Subject[]> {
     return this.http.get(this.subjectUrl + id)
-                    .map(this.extractData)
+                    .map(data => {
+                        let res = data.json();
+                        if (res.data.courses.length == 0) {
+                            return false;
+                        }
+                        return res.data.courses;
+                    })
                     .catch(this.handleError);
   }
 

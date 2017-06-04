@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 
 import { SubjectDetailService } from './subject-detail.service'
+import { AuthService } from '../auth/auth.service';
 
 import { Subject } from './subject';
 
@@ -15,11 +16,14 @@ import { Subject } from './subject';
 export class SubjectDetailComponent implements OnInit {
   subjectID: number;
   subject: Subject[];
+  errorMessage: string;
+  currentUser;
 
-  constructor(private route: ActivatedRoute, private router: Router, private subjectDetailService: SubjectDetailService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private subjectDetailService: SubjectDetailService, private authService: AuthService) { }
 
   ngOnInit() {
     this.getSubject();
+    this.currentUser = this.authService.getLoggedUser();
   }
 
   getSubject() {
